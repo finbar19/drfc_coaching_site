@@ -2,3 +2,11 @@ name: graham
 super: true
 id: 3c77cbf6-d6e4-43a7-87ec-f4bbdd8f122c
 password_hash: $2y$10$.ZPbf7AtAuyX6X2OIV8M9e0yqMude9b46/.QyyNRy2uH1y402XjxS
+preferences:
+  taxonomies:
+    post_types:
+      after_save: create_another
+      columns:
+        - title
+        - slug
+        - icon_field

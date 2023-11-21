@@ -15,6 +15,21 @@ tabs:
             field:
               type: markdown
               localizable: true
+          -
+            handle: post_type
+            field:
+              mode: default
+              create: true
+              taxonomies:
+                - post_types
+              type: terms
+              display: 'Post Type'
+              icon: taxonomy
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
       -
         display: 'Visual Content'
         fields:
@@ -48,6 +63,8 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              max_files: 5
+              folder: posts
           -
             handle: external_link_field
             field:
